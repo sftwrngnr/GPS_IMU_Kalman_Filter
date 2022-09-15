@@ -1,5 +1,5 @@
 #include "fusion.hpp"
-#include "lib/Eigen/Dense"
+#include "Eigen/Dense"
 #include <mutex>
 #include <time.h>
 #include "paramReader.hpp"
