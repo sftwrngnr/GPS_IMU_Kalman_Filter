@@ -13,7 +13,7 @@
 
 int main(int argc, const char * argv[])
 {
-    std::ifstream ip("/home/jdanh/source/kalman_filter_project/GPS_IMU_Kalman_Filter/data/Data.csv");
+    std::ifstream ip("../data/Data.csv");
     if(!ip.is_open())
     {
         std::cerr << "Failed to open the data file";
