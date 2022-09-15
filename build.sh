@@ -1,5 +1,10 @@
 #!/bin/bash
 cd lib
+mkdir doc
+mkdir bias
+mkdir lapack
+mkdir unsupported
+mkdir demos
 mkdir build
 cd build
 cmake ../
