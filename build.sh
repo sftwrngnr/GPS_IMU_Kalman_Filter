@@ -3,5 +3,8 @@ cd lib
 mkdir build
 cd build
 cmake ../
-make install
+sudo make install
+cd ../../src
+g++ -I /usr/local/include/eigen3 main.cpp 
+
 
