@@ -5,7 +5,7 @@ CPPFLAGS = $(INCLUDES)
 
 all: $(objects) main
 
-$(filter %.o,$(obj_files)): %.o: %.cpp
+$(filter %.o,$(obj_files)): $(objects): %.cpp
 	echo "target: $@ prereq: $<"
 $(filter %.result,$(obj_files)): %.result: %.raw
 	echo "target: $@ prereq: $<" 
@@ -14,7 +14,7 @@ $(filter %.result,$(obj_files)): %.result: %.raw
 		$(CXX) -c $(CPPFLAGS) $< -o $@
 
 main: main.cpp
-	$(CXX) $(CPPFLAGS) $(LDFLAGS) main.cpp *.o -o main
+	$(CXX) $(CPPFLAGS) $(LDFLAGS) main.cpp $(objects) -o main
 
 clean:
 	rm -f $(objects) main
