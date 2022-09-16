@@ -11,7 +11,7 @@ cmake ../
 sudo make install
 rm -rf ./*
 cd ../../src
-g++ -I /usr/local/include/eigen3 main.cpp 
-./a.out
+g++ -I /usr/local/include/eigen3 main.cpp -o main
+./main
 
 

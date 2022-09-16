@@ -8,7 +8,7 @@
 
 #include "utils.hpp"
 
-Eigen::MatrixXd calculate_joacobian(const Eigen::VectorXd& v, const double dt)
+Eigen::MatrixXd calculate_jacobian(const Eigen::VectorXd& v, const double dt)
 {
     // Assumes Jacobian is 6 x 6
     Eigen::MatrixXd JA = Eigen::MatrixXd::Zero(6,6);

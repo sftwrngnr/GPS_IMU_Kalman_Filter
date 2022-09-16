@@ -2,7 +2,7 @@
 #include "Eigen/Dense"
 #include <mutex>
 #include <time.h>
-#include "paramReader.hpp"
+#include "parameterReader.hpp"
 
 // Read these parameters from the file
 struct EKFParams
