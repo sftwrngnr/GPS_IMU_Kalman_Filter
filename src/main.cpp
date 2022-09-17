@@ -36,11 +36,14 @@ int main(int argc, const char * argv[])
     {
         std::istringstream iss(str);
         std::string token;
-        
+        std::int16_t tcount = 0;
         while (std::getline(iss, token, ','))
         {
             // process each token
-            std::cout << token.size() << " ";
+            tcount++;
+            if (((tcount >= 3)  && (tcount < 7)) || ((tcount > 14) && (tcount < 17))) {
+                std::cout << token << " ";
+            }
         }
         std::cout << std::endl;
     }
