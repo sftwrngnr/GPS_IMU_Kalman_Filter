@@ -10,6 +10,7 @@
 #include <fstream>
 #include <sstream>
 #include "fusion.hpp"
+#include "parameterReader.hpp"
 
 int main(int argc, const char * argv[])
 {
@@ -45,6 +46,12 @@ int main(int argc, const char * argv[])
     }
     
     ip.close();
+    // Call read parameters
+    ParameterReader *pread = new ParameterReader();
+    //pread->getData()
+
+    
+
     
     return 0;
 }
